@@ -10,6 +10,7 @@ rebel.xml
 **/bower_components
 **/node_modules
 **/frontend/node
+**/build-tools
 addon/src/main/frontend/package-lock.json
 
 # Mac

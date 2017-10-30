@@ -14,6 +14,7 @@
     <description>Parent project for Charts addon, demos and packaging</description>
 
     <modules>
+        <module>webjar</module>
         <module>addon</module>
         <module>model</module>
         <module>integration-test</module>
@@ -29,6 +30,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.organization>Vaadin Ltd</project.organization>
         <vaadin.version>10.0-SNAPSHOT</vaadin.version>
+        <vaadin.flow.version>1.0.0.alpha6</vaadin.flow.version>
         <jetty.version>9.3.9.v20160517</jetty.version>
     </properties>
 

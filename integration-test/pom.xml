@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>com.vaadin</groupId>
         <artifactId>vaadin-charts-parent</artifactId>
@@ -27,7 +27,6 @@
         <servlet.api.version>3.1.0</servlet.api.version>
 
         <!-- Plugins -->
-        <frontend.maven.plugin.version>1.4</frontend.maven.plugin.version>
         <jetty.version>9.3.7.v20160115</jetty.version>
         <driver.binary.downloader.maven.plugin.version>1.0.14</driver.binary.downloader.maven.plugin.version>
         <maven.failsafe.plugin.version>2.20</maven.failsafe.plugin.version>
@@ -70,7 +69,7 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>flow-server</artifactId>
-            <version>0.1.22</version>
+            <version>${vaadin.flow.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -349,14 +348,6 @@
                         <artifactId>maven-war-plugin</artifactId>
                         <version>${maven.war.plugin.version}</version>
                         <configuration>
-                            <webResources>
-                                <resource>
-                                    <directory>${frontend.working.directory}</directory>
-                                    <excludes>
-                                        <exclude>build/**</exclude>
-                                    </excludes>
-                                </resource>
-                            </webResources>
                             <packagingExcludes>**/node_modules/,**/node/,**/etc/,**/bower.json,**/package.json
                             </packagingExcludes>
                         </configuration>
